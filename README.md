@@ -7,11 +7,11 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 ## OpenCore Version
 - 0.6.0
 
-![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/about_mac_catalina_10.15.6.jpg)
-![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/energy_saver.jpg)
-![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/audio_input.jpg)
-![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/audio_output.jpg)
-![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/usb_ports.jpg)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/about_mac_catalina_10.15.6.jpg)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/energy_saver.jpg)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_input.jpg)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_output.jpg)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/usb_ports.jpg)
 
 ## Hardware Specification
 | Item | Brand | Comment |
