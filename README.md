@@ -26,7 +26,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 | WiFi/Bluetooth Module | 1. Onboard WiFi, Bluetooth Module; 2. BCM94360CS2 | |
 | Case | [Inwin Chopin Mini-ITX case](https://www.amazon.com/InWin-Chopin-Mini-ITX-stickers-Aluminum/dp/B01N091225/ref=sr_1_1?crid=SLF1ACIIUQSA&dchild=1&keywords=inwin+chopin&qid=1599453831&sprefix=inwin+c%2Caps%2C345&sr=8-1) | |
 | PSU | 150W 80 plus bronze adapter built in case | 
-| Monitor | ViewSonic VX2831-4K-HD 28 inch | |
+| Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
 ## What Works
 - Audio device
@@ -51,6 +51,9 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 6. Enjoy it.
 
 ## iGPU Patching
+
+**Purpose:** I meet black screen issue of DP port when the long time sleep (for example, more than 30 mins), when wake up, the fan of CPU start to work, but the monitor no signal, so for fixing this issue, I patched the video ports of iGPU, after patched, the black issue was fixed.
+
 Follow the official instruction: https://dortania.github.io/OpenCore-Install-Guide/extras/gpu-patches.html#igpu-busid-patching
 
 Then add the patching information to `DeviceProperties -> PciRoot(0x0)/Pci(0x2,0x0)`: 
