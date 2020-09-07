@@ -9,8 +9,8 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/about_mac_catalina_10.15.6.jpg)
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/energy_saver.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_input.jpg)
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_output.jpg)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_input.jpg)
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/usb_ports.jpg)
 
 ## Hardware Specification
@@ -44,11 +44,27 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 
 ## How To Enable Built Intel WiFi/Bluetooth Module
 1. Copy patches KEXTS from directory `Intel WiFi/Bluetooth Module KEXTS` (`IntelBluetoothInjector.kext`, `IntelMausiEthernet.kext`, `itlwm.kext`) to directory `EFI/OC/Kexts`.
-2. Rename `config_itlwm.plist` of directory `EFI\OC` to `config.plist`.
+2. Rename `config_itlwm.plist` of directory `EFI/OC` to `config.plist`.
 3. Download `HeliPort` from [here](https://openintelwireless.github.io/HeliPort/) and install it.
 4. Reboot with reset NVRAM.
 5. Control the WiFi with `HeliPort` to on/off.
 6. Enjoy it.
+
+## iGPU Patching
+Follow the official instruction: https://dortania.github.io/OpenCore-Install-Guide/extras/gpu-patches.html#igpu-busid-patching
+
+Then add the patching information to `DeviceProperties -> PciRoot(0x0)/Pci(0x2,0x0)`: 
+```
+- framebuffer-con0-enable = 01000000							// HDMI port
+- framebuffer-con1-enable = 00000000							// disabled it as this motherboard only two video output port
+- framebuffer-con2-enable = 01000000							// DP port
+- framebuffer-con0-alldata = 01050900 00080000 C7030000 		// data type: DATA
+- framebuffer-con1-alldata = 02040A00 00040000 C7030000 		// data type: DATA
+- framebuffer-con2-alldata = 03060800 00040000 C7030000 		// data type: DATA
+- framebuffer-patch-enable = 01000000 							// data type: DATA
+```
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/igpu_pacthing.png)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/hackintool_video_connectors.jpg)
 
 ## Notice
 1. `device-id` is a must for DeviceProperties->PciRoot(0x0)/Pci(0x2,0x0), or you may suffer crashes on firefox, Photos etc.
