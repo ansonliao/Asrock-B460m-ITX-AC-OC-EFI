@@ -38,7 +38,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 - iServices: iMessage, FaceTime, Apple ID, App Store, iCloud, Sidecard (with BCM94360CS2).
 - WiFI & Bluetooth
     - Intel WiFi & bluetooth also works with patches: [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm).
-    - BCM94360CMS: WiFi works, bluetooth works, iServices works.
+    - BCM94360CM2: WiFi works, bluetooth works, iServices works.
 
 ## What Broken:
 
