@@ -43,7 +43,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 ## What Broken:
 
 ## How To Enable Built Intel WiFi/Bluetooth Module
-1. Copy patches KEXTS from directory `Intel WiFi/Bluetooth Module KEXTS` (`IntelBluetoothInjector.kext`, `IntelMausiEthernet.kext`, `itlwm.kext`) to directory `EFI/OC/Kexts`.
+1. Copy the patch KEXTs from directory `Intel WiFi/Bluetooth Module KEXTS` (`IntelBluetoothInjector.kext`, `IntelMausiEthernet.kext`, `itlwm.kext`) to directory `EFI/OC/Kexts`.
 2. Rename `config_itlwm.plist` of directory `EFI/OC` to `config.plist`.
 3. Download `HeliPort` from [here](https://openintelwireless.github.io/HeliPort/) and install it.
 4. Reboot with reset NVRAM.
