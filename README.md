@@ -1,14 +1,23 @@
 # Asrock-B460m-ITX-AC-OC-EFI
 The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 
+## OS Version
+- Catalina 10.15.6
+
 ## OpenCore Version
 - 0.6.0
+
+![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/about_mac_catalina_10.15.6.jpg)
+![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/energy_saver.jpg)
+![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/audio_input.jpg)
+![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/audio_output.jpg)
+![](https://raw.githubusercontent.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/usb_ports.jpg)
 
 ## Hardware Specification
 | Item | Brand | Comment |
 | --- | --- | --- |
-| CPU | I5 10500 ES (QSRK) | |
-| Mother Board | [Asrock B460m-ITX/AC](https://www.asrock.com/mb/Intel/B460M-ITXac/) |
+| CPU | Intel I5 10500 ES (QSRK) | |
+| Motherboard | [Asrock B460m-ITX/AC](https://www.asrock.com/mb/Intel/B460M-ITXac/) |
 | BIOS Version | 1.4.0 | |
 | Memory | Cuso DDR4 2666 16G x 1 | |
 | SSD | Intel 760P 512 GB | |
@@ -16,7 +25,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
 | dGPU | None | |
 | WiFi/Bluetooth Module | 1. Onboard WiFi, Bluetooth Module; 2. BCM94360CS2 | |
 | Case | [Inwin Chopin Mini-ITX case](https://www.amazon.com/InWin-Chopin-Mini-ITX-stickers-Aluminum/dp/B01N091225/ref=sr_1_1?crid=SLF1ACIIUQSA&dchild=1&keywords=inwin+chopin&qid=1599453831&sprefix=inwin+c%2Caps%2C345&sr=8-1) | |
-| PSU | 150W 80 pLUS bronze adapter built in case | 
+| PSU | 150W 80 plus bronze adapter built in case | 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | |
 
 ## What Works
