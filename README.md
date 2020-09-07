@@ -41,6 +41,8 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU.
     - BCM94360CS2: WiFi works, bluetooth works, iServices works.
 
 ## What Broken:
+- When the OS boot, the Apple logo first is big, then changes to smaller
+- In `Hackintool` -> `USB`, the `name` can't display correctly, displays `???`
 
 ## How To Enable Built Intel WiFi/Bluetooth Module
 1. Copy the patch KEXTs from directory `Intel WiFi/Bluetooth Module KEXTS` (`IntelBluetoothInjector.kext`, `IntelMausiEthernet.kext`, `itlwm.kext`) to directory `EFI/OC/Kexts`.
