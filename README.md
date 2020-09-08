@@ -46,16 +46,16 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - First commit
 
 ## What Works
-- Audio device
-- USB: USB 2 and USB 3
+- Audio device: front panel, back panel
+- USB: USB 2 and USB 3, total 6 USB physical ports
 - HDMI video output port (only tested in 1920x1080@30HZ with 4K monitor, didn't test the audio of HDMI)
 - DP video port, audio output of DP
 - Sleep
 - Wake up
-- iServices: iMessage, FaceTime, Apple ID, App Store, iCloud, Sidecar (with BCM94360CS2).
+- iServices: iMessage, FaceTime, Apple ID, App Store, iCloud, Sidecar (with BCM94360CS2)
 - WiFI & Bluetooth
-    - Intel WiFi & bluetooth also works with patches: [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm).
-    - BCM94360CS2: WiFi works, bluetooth works, iServices works.
+    - Intel WiFi & bluetooth also works with patches: [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm)
+    - BCM94360CS2: WiFi works, bluetooth works, iServices works
 
 ## What Broken
 - When the OS boot, the Apple logo first is big, then changes to smaller
