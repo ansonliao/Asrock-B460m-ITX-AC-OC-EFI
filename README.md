@@ -1,11 +1,11 @@
 # Asrock-B460m-ITX-AC-OC-EFI
 The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU UHD 630.
 
-## OS Version
-- Catalina 10.15.6
-
 ## OpenCore Version
 - 0.6.0
+
+## OS Version
+- Catalina 10.15.6
 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/about_mac_catalina_10.15.6.jpg)
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/energy_saver.jpg)
