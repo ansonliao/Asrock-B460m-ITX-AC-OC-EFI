@@ -1,6 +1,16 @@
 # Asrock-B460m-ITX-AC-OC-EFI
 The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU UHD 630.
 
+- [opencore-version](#opencore-version)
+- [OS Version](#os-version)
+- [Hardware Specification](#Hardware-Specification)
+- [Changelog](#Changelog)
+- [What Works](#What-Works)
+- [What Broken](#What-Broken)
+- [How To Enable Built Intel WiFi/Bluetooth Module](#how-to-enable-built-intel-wifibluetooth-module)
+- [iGPU Patching](#iGPU-Patching)
+- [Notice](#Notice)
+
 ## OpenCore Version
 - 0.6.1
 
@@ -47,7 +57,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
     - Intel WiFi & bluetooth also works with patches: [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm).
     - BCM94360CS2: WiFi works, bluetooth works, iServices works.
 
-## What Broken:
+## What Broken
 - When the OS boot, the Apple logo first is big, then changes to smaller
 - In `Hackintool` -> `USB`, the `name` can't display correctly, displays `???`
 
