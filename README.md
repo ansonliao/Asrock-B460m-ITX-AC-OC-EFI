@@ -2,16 +2,12 @@
 The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU UHD 630.
 
 ## OpenCore Version
-- 0.6.0
+- 0.6.1
 
 ## OS Version
 - Catalina 10.15.6
 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/about_mac_catalina_10.15.6.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/energy_saver.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_output.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_input.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/usb_ports.jpg)
 
 ## Hardware Specification
 | Item | Brand | Comment |
@@ -27,6 +23,17 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | Case | [Inwin Chopin Mini-ITX case](https://www.amazon.com/InWin-Chopin-Mini-ITX-stickers-Aluminum/dp/B01N091225/ref=sr_1_1?crid=SLF1ACIIUQSA&dchild=1&keywords=inwin+chopin&qid=1599453831&sprefix=inwin+c%2Caps%2C345&sr=8-1) | |
 | PSU | 150W 80 plus bronze adapter built in case | 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
+
+## Changelog
+*2020-Sep-8*
+- Upgraded OpenCore version to `0.6.1`
+- Upgraded `AppleALC.kext` version to `1.5.2`, `Lilu.kext` version to `1.4.7`, `WhateverGreen.kext` version to `1.4.2`
+- Support audio device `Realtek ALC887` natively by the latest version `AppleALC.kext` and `Lilu.kext`, set `layout-id = 0C000000` or add boot-args `alcid=12` to enable audio device `Realtek ALC887`
+- Removed fake PCI ID kexts that sovled audio device before: `FakePCIID_Intel_HDMI_Audio.kext`, `FakePCIID.kext`
+- Removed unnecessary files
+
+*2020-Sep-07*
+- First commit
 
 ## What Works
 - Audio device
