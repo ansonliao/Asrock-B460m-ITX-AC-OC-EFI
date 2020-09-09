@@ -1,17 +1,23 @@
 # Asrock-B460m-ITX-AC-OC-EFI
 The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU UHD 630.
 
+- [opencore-version](#opencore-version)
+- [OS Version](#os-version)
+- [Hardware Specification](#Hardware-Specification)
+- [Changelog](#Changelog)
+- [What Works](#What-Works)
+- [What Broken](#What-Broken)
+- [How To Enable Built Intel WiFi/Bluetooth Module](#how-to-enable-built-intel-wifibluetooth-module)
+- [iGPU Patching](#iGPU-Patching)
+- [Notice](#Notice)
+
 ## OpenCore Version
-- 0.6.0
+- 0.6.1
 
 ## OS Version
 - Catalina 10.15.6
 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/about_mac_catalina_10.15.6.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/energy_saver.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_output.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/audio_input.jpg)
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/usb_ports.jpg)
 
 ## Hardware Specification
 | Item | Brand | Comment |
@@ -28,29 +34,42 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | PSU | 150W 80 plus bronze adapter built in case | 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
+## Changelog
+*2020-Sep-8*
+- Upgraded OpenCore version to `0.6.1`
+- Upgraded `AppleALC.kext` version to `1.5.2`, `Lilu.kext` version to `1.4.7`, `WhateverGreen.kext` version to `1.4.2`
+- Support audio device `Realtek ALC887` natively by the latest version `AppleALC.kext` and `Lilu.kext`, set `layout-id = 0C000000` or add boot-args `alcid=12` to enable audio device `Realtek ALC887`
+- Removed fake PCI ID kexts that sovled audio device before: `FakePCIID_Intel_HDMI_Audio.kext`, `FakePCIID.kext`
+- Removed unnecessary files
+
+*2020-Sep-07*
+- First commit
+
 ## What Works
-- Audio device
-- USB: USB 2 and USB 3
+- Audio device: front panel, back panel
+- USB: USB 2 and USB 3, total 6 USB physical ports
 - HDMI video output port (only tested in 1920x1080@30HZ with 4K monitor, didn't test the audio of HDMI)
 - DP video port, audio output of DP
 - Sleep
 - Wake up
-- iServices: iMessage, FaceTime, Apple ID, App Store, iCloud, Sidecar (with BCM94360CS2).
+- iServices: iMessage, FaceTime, Apple ID, App Store, iCloud, Sidecar (with BCM94360CS2)
 - WiFI & Bluetooth
-    - Intel WiFi & bluetooth also works with patches: [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm).
-    - BCM94360CS2: WiFi works, bluetooth works, iServices works.
+    - Intel WiFi & bluetooth also works with patches: [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm)
+    - BCM94360CS2: WiFi works, bluetooth works, iServices works
 
-## What Broken:
+## What Broken
 - When the OS boot, the Apple logo first is big, then changes to smaller
 - In `Hackintool` -> `USB`, the `name` can't display correctly, displays `???`
 
 ## How To Enable Built Intel WiFi/Bluetooth Module
-1. Copy the patch KEXTs from directory `Intel WiFi/Bluetooth Module KEXTS` (`IntelBluetoothInjector.kext`, `IntelMausiEthernet.kext`, `itlwm.kext`) to directory `EFI/OC/Kexts`.
-2. Rename `config_itlwm.plist` of directory `EFI/OC` to `config.plist`.
-3. Download `HeliPort` from [here](https://openintelwireless.github.io/HeliPort/) and install it.
-4. Reboot with reset NVRAM.
-5. Control the WiFi with `HeliPort` to on/off.
-6. Enjoy it.
+1. Download `itlwm.kext` from [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm) and place the kext file to `EFI/OC/Kexts/`
+2. Downlaod `IntelBluetoothInjector.kext` from [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and place the kext file to `EFI/OC/Kexts/`
+3. Copy `IntelMausiEthernet.kext` from `Intel WiFi/Bluetooth Module KEXTS` to directory `EFI/OC/Kexts`
+4. Rename `config_itlwm.plist` of directory `EFI/OC` to `config.plist`
+5. Download `HeliPort` from [here](https://openintelwireless.github.io/HeliPort/) and install it
+6. Reboot with reset NVRAM
+7. Control the WiFi with `HeliPort` to on/off
+8. Enjoy it
 
 ## iGPU Patching
 
