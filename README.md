@@ -62,12 +62,14 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - In `Hackintool` -> `USB`, the `name` can't display correctly, displays `???`
 
 ## How To Enable Built Intel WiFi/Bluetooth Module
-1. Copy the patch KEXTs from directory `Intel WiFi/Bluetooth Module KEXTS` (`IntelBluetoothInjector.kext`, `IntelMausiEthernet.kext`, `itlwm.kext`) to directory `EFI/OC/Kexts`.
-2. Rename `config_itlwm.plist` of directory `EFI/OC` to `config.plist`.
-3. Download `HeliPort` from [here](https://openintelwireless.github.io/HeliPort/) and install it.
-4. Reboot with reset NVRAM.
-5. Control the WiFi with `HeliPort` to on/off.
-6. Enjoy it.
+1. Download `itlwm.kext` from [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm) and place the kext file to `EFI/OC/Kexts/`
+2. Downlaod `IntelBluetoothInjector.kext` from [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and place the kext file to `EFI/OC/Kexts/`
+3. Copy `IntelMausiEthernet.kext` from `Intel WiFi/Bluetooth Module KEXTS` to directory `EFI/OC/Kexts`
+4. Rename `config_itlwm.plist` of directory `EFI/OC` to `config.plist`
+5. Download `HeliPort` from [here](https://openintelwireless.github.io/HeliPort/) and install it
+6. Reboot with reset NVRAM
+7. Control the WiFi with `HeliPort` to on/off
+8. Enjoy it
 
 ## iGPU Patching
 
