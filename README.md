@@ -15,7 +15,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - 0.6.1
 
 ## OS Version Supported
-- [Catalina 10.15.7](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/tree/574f12d2979c5c984b011a77bb96f11180029608)
+- [Catalina 10.15.7](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/tree/574f12d2979c5c984b011a77bb96f11180029608) <-- Currently
 - [Catalina 10.15.6](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/tree/f955c264c2b699fdcd3c1e202609a5cc3afa0047)
 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/about_mac_catalina_10.15.6.jpg)
@@ -36,6 +36,9 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
 ## Changelog
+*2020-Sep-29*
+- Supported [Catalina 10.15.7](https://support.apple.com/kb/DL2051)
+
 *2020-Sep-8*
 - Upgraded OpenCore version to `0.6.1`
 - Upgraded `AppleALC.kext` version to `1.5.2`, `Lilu.kext` version to `1.4.7`, `WhateverGreen.kext` version to `1.4.2`
