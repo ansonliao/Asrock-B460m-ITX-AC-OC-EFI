@@ -76,7 +76,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 2. Downlaod `IntelBluetoothInjector.kext` from [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and place the kext file to `EFI/OC/Kexts/`
 3. Copy `IntelMausiEthernet.kext` from `Intel WiFi/Bluetooth Module KEXTS` to directory `EFI/OC/Kexts`
 4. Rename `config_itlwm.plist` of directory `EFI/OC` to `config.plist`
-5. Check `config.plist` (just renamed in step 4) file's structure whether is match to your corresponding `OpenCore` version, if doesn't match, please update the structure of `config.plist`, more details please refer to [the official guideline of OpenCore](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#updating-opencore).
+5. Check `config.plist` (just renamed in step 4) file's structure whether is match to your corresponding `OpenCore` version, if doesn't match, please update the structure of `config.plist`, more details please refer to the official guideline of `OpenCore`: [Updating OpenCore](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#updating-opencore).
 5. Download `HeliPort` from [here](https://openintelwireless.github.io/HeliPort/) and install it
 6. Reboot with reset NVRAM
 7. Control the WiFi with `HeliPort` to on/off
