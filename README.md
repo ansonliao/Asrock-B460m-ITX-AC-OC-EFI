@@ -41,6 +41,11 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 *2020-Dec-04*
 - Upgraded OC to `0.6.3`
 - Upgraded KEXTs
+- macOS version: `11.0.1`
+
+*2020-Dec-04*
+- Upgraded OC to `0.6.3`
+- Upgraded KEXTs
 - macOS version: `10.15.7`
 
 *2020-Oct-09*
