@@ -12,16 +12,17 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - [Notice](#Notice)
 
 ## OpenCore Version
-- 0.6.3
+- 0.6.4
 
 ## OS Version Supported
+- Big Sur 11.0.1 with OC 0.6.4
 - Big Sur 11.0.1 with OC 0.6.3
 - Catalina 10.15.7 with OC 0.6.3
 - Catalina 10.15.7 with OC 0.6.2
 - Catalina 10.15.7
 - Catalina 10.15.6
 
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/about_mac_catalina_10.15.6.jpg)
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/mac_11_with_oc.jpg)
 
 ## Hardware Specification
 | Item | Brand | Comment |
@@ -39,6 +40,10 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
 ## Changelog
+*2020-Dec-10*
+- Upgraded OC to `0.6.4`
+- Upgraded KEXTs
+
 *2020-Dec-04*
 - Upgraded OC to `0.6.3`
 - Upgraded KEXTs
