@@ -10,6 +10,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - [How To Enable Built Intel WiFi/Bluetooth Module](#how-to-enable-built-intel-wifibluetooth-module)
 - [iGPU Patching](#iGPU-Patching)
 - [Notice](#Notice)
+- [Donation](#Donate-me-for-a-coffee)
 
 ## OpenCore Version
 - 0.6.5
