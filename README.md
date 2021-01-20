@@ -10,7 +10,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - [How To Enable Built Intel WiFi/Bluetooth Module](#how-to-enable-built-intel-wifibluetooth-module)
 - [iGPU Patching](#iGPU-Patching)
 - [Notice](#Notice)
-- [Donation](#Donate-me-for-a-coffee)
+- [Donation](#Donate-a-coffee)
 
 ## OpenCore Version
 - 0.6.5
@@ -132,5 +132,5 @@ Then add the patching information to `DeviceProperties -> PciRoot(0x0)/Pci(0x2,0
 1. `device-id` is a must for DeviceProperties->PciRoot(0x0)/Pci(0x2,0x0), or you may suffer crashes on firefox, Photos etc.
 2. Fill your SMBIOS information (can generate from [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)) in `PlatForm->Generic`, else will can't boot.
 
-## Donate me for a coffee 
+## Donate a coffee 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/donation.png?raw=true)
