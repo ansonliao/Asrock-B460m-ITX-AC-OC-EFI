@@ -16,16 +16,16 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - 0.6.6
 
 ## OS Version Supported
-- Big Sure 11.2.2 with OC 0.6.6
-- Big Sure 11.2.1 with OC 0.6.6
-- Big Sur 11.1 with OC 0.6.5
-- Big Sur 11.1 with OC 0.6.4
-- Big Sur 11.0.1 with OC 0.6.4
-- Big Sur 11.0.1 with OC 0.6.3
-- Catalina 10.15.7 with OC 0.6.3
-- Catalina 10.15.7 with OC 0.6.2
-- Catalina 10.15.7
-- Catalina 10.15.6
+- [x] Big Sure 11.2.2 with OC 0.6.6
+- [x] Big Sure 11.2.1 with OC 0.6.6
+- [x] Big Sur 11.1 with OC 0.6.5
+- [x] Big Sur 11.1 with OC 0.6.4
+- [x] Big Sur 11.0.1 with OC 0.6.4
+- [x] Big Sur 11.0.1 with OC 0.6.3
+- [x] Catalina 10.15.7 with OC 0.6.3
+- [x] Catalina 10.15.7 with OC 0.6.2
+- [x] Catalina 10.15.7
+- [x] Catalina 10.15.6
 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/mac_11_with_oc.jpg)
 
