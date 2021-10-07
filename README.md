@@ -48,7 +48,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
 ## Changelog
-*2021-Sep-26*
+*2021-Oct-07*
 - Upgraded OC to `0.7.4`
 - Upgraded KEXTs
 
