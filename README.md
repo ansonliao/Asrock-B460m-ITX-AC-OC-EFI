@@ -16,6 +16,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - 0.7.7
 
 ## OS Version Supported]
+- [x] Monterey `12.2` with OC `0.7.7`
 - [x] Monterey 12.0.1 with OC 0.7.6
 - [x] Monterey 12.0.1 with OC 0.7.5
 - [x] Big Sur 11.6 with OC 0.7.4
@@ -54,6 +55,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 *2022-Jan-31*
 - Upgraded OC to `0.7.7`
 - Upgraded KEXTs
+- Supports Monterey `12.2`
 
 *2021-Nov-08*
 - Upgraded OC to `0.7.6`
