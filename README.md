@@ -16,6 +16,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - 0.7.9
 
 ## OS Version Supported]
+- [x] Monterey `12.3` with OC `0.7.9`
 - [x] Monterey `12.2.1` with OC `0.7.9`
 - [x] Monterey `12.2` with OC `0.7.7`
 - [x] Monterey 12.0.1 with OC 0.7.6
@@ -53,6 +54,9 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
 ## Changelog
+*2022-Mar-20*
+- Supports Monterey `12.3`
+
 *2022-Mar-13*
 - Upgraded OC to `0.7.9`
 - Upgraded KEXTs
