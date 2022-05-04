@@ -16,6 +16,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - 0.8.0
 
 ## OS Version Supported]
+- [x] Monterey `12.3.1` with OC `0.8.0`
 - [x] Monterey `12.3.1` with OC `0.7.9`
 - [x] Monterey `12.3` with OC `0.7.9`
 - [x] Monterey `12.2.1` with OC `0.7.9`
