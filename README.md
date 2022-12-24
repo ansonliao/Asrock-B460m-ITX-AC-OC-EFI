@@ -12,10 +12,14 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - [Notice](#Notice)
 - [Donation](#Donate-a-coffee)
 
+## About macOS
+![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/ventura_13_1_about_mac.jpeg)
+
 ## OpenCore Version
-- 0.8.0
+- 0.8.7
 
 ## OS Version Supported]
+- [x] Ventura `13.1` with OC `0.8.7`
 - [x] Monterey `12.3.1` with OC `0.8.0`
 - [x] Monterey `12.3.1` with OC `0.7.9`
 - [x] Monterey `12.3` with OC `0.7.9`
@@ -38,8 +42,6 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - [x] Catalina 10.15.7
 - [x] Catalina 10.15.6
 
-![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/mac.monterey.12.2.jpg)
-
 ## Hardware Specification
 | Item | Brand | Comment |
 | --- | --- | --- |
@@ -56,6 +58,12 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
 ## Changelog
+*2022-Dec-25*
+- Upgraded OC to `0.8.7` (![#51](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/51))
+- Upgraded KEXTs
+- Supported Ventura 13.1
+- Fixed BIOS error messages (![#51](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/50))
+
 *2022-Apr-22*
 - Upgraded OC to `0.8.0`
 - Upgraded KEXTs
