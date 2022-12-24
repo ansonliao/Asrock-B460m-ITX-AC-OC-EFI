@@ -59,10 +59,10 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 
 ## Changelog
 *2022-Dec-25*
-- Upgraded OC to `0.8.7` (![#51](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/51))
+- Upgraded OC to `0.8.7` ([#51](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/51))
 - Upgraded KEXTs
 - Supported Ventura 13.1
-- Fixed BIOS error messages (![#51](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/50))
+- Fixed BIOS error messages ([#51](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/50))
 
 *2022-Apr-22*
 - Upgraded OC to `0.8.0`
