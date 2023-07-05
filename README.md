@@ -5,6 +5,7 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 - [OS Version Supported](#os-version-supported)
 - [Hardware Specification](#Hardware-Specification)
 - [Changelog](#Changelog)
+- [BIOS Settings](#BIOS-Settings)
 - [What Works](#What-Works)
 - [What Broken](#What-Broken)
 - [How To Enable Built Intel WiFi/Bluetooth Module](#how-to-enable-built-intel-wifibluetooth-module)
@@ -159,6 +160,15 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 
 *2020-Sep-07*
 - First commit
+
+## BIOS Settings
+- Advanced -> CPU Configuration -> CFG Lock -> Disabled
+- Advanced -> Chipset Configuration -> Primary Graphics Adapter -> Onboard
+- Advanced -> Chipset Configuration -> Above 4G Decoding -> Enabled
+- Advanced -> Chipset Configuration -> VT-d -> Disabled
+- Advanced -> Chipset Configuration -> Share Memory -> 128M
+- Advanced -> Chipset Configuration -> IGPU Multi-Monitor -> Disabled
+- Advanced -> USB Configuration -> XHCI Hand-off -> Enabled
 
 ## What Works
 - Audio device: front panel, back panel
