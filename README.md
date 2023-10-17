@@ -17,9 +17,10 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/ventura_13_1_about_mac.jpeg)
 
 ## OpenCore Version
-- 0.8.7
+- 0.9.5
 
 ## OS Version Supported]
+- [x] Ventura `13.6` with OC `0.9.5`
 - [x] Ventura `13.1` with OC `0.8.7`
 - [x] Monterey `12.3.1` with OC `0.8.0`
 - [x] Monterey `12.3.1` with OC `0.7.9`
@@ -59,6 +60,11 @@ The EFI of OpenCore for Asrock B460M-ITX/AC with Intel I5 10500 ES CPU and iGPU 
 | Monitor | ViewSonic VX2831-4K-HD 28 inch | DP port connection in use |
 
 ## Changelog
+*2023-Oct-17*
+- Upgraded OC to `0.9.5` ([#59](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/59))
+- Upgraded KEXTs
+- Supported Ventura 13.6
+
 *2022-Dec-25*
 - Upgraded OC to `0.8.7` ([#51](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/issues/51))
 - Upgraded KEXTs
@@ -221,5 +227,5 @@ Then add the patching information to `DeviceProperties -> PciRoot(0x0)/Pci(0x2,0
 1. `device-id` is a must for DeviceProperties->PciRoot(0x0)/Pci(0x2,0x0), or you may suffer crashes on firefox, Photos etc.
 2. Fill your SMBIOS information (can generate from [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)) in `PlatForm->Generic`, else will can't boot.
 
-## Donate a coffee 
+## Donate a coffee
 ![](https://github.com/ansonliao/Asrock-B460m-ITX-AC-OC-EFI/blob/master/images/donation.png?raw=true)
